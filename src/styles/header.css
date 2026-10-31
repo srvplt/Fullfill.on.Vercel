@@ -42,9 +42,8 @@
 
 .site-header__logo img {
   display: block;
-  width: 130px;
+  width: 148px;
   max-width: 100%;
-  max-height: 38px;
   height: auto;
   object-fit: contain;
 }
@@ -240,7 +239,7 @@ body.menu-open .site-header__mobile-panel,
     margin: 0;
   }
 
-  .site-header__logo img { width: 118px; max-width: 100%; max-height: 34px; }
+  .site-header__logo img { width: 132px; max-width: 100%; }
 
   .site-header__nav {
     display: flex;
@@ -273,13 +272,13 @@ body.menu-open .site-header__mobile-panel,
   }
 
   .site-header__nav { right: 16px; }
-  .site-header__logo img { width: 108px; max-width: 100%; max-height: 32px; }
+  .site-header__logo img { width: 119px; max-width: 100%; }
   .site-header__menu-toggle { width: 36px; height: 36px; padding: 0; }
   .site-header__hamburger-bar { width: 20px; }
 }
 
 @media (max-width: 360px) {
-  .site-header__logo img { width: 100px; max-width: 100%; max-height: 30px; }
+  .site-header__logo img { width: 109px; max-width: 100%; }
 }
 
 
