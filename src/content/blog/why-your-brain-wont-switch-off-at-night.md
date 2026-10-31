@@ -3,6 +3,7 @@ title: "Why Your Brain Won't Switch Off at Night"
 description: "Your body is exhausted and your mind won't stop. That isn't a relaxation problem — it's a learned arousal loop, and there's a well-evidenced way out of it."
 pubDate: 2026-09-02
 tags: ["sleep", "insomnia", "anxiety", "mental health", "evidence"]
+image: ../../assets/images/blog/why-your-brain-wont-switch-off-at-night.jpg
 ---
 
 You got into bed tired. Properly tired — the kind where your eyes were closing on the sofa an hour ago.

@@ -3,6 +3,7 @@ title: "Why You Can't Find Your Purpose"
 description: "Most purpose advice tells you to look inward until something surfaces. The research points the other way — and the famous ikigai diagram isn't Japanese."
 pubDate: 2026-09-02
 tags: ["purpose", "meaning", "motivation", "mental health", "evidence"]
+image: ../../assets/images/blog/why-you-cant-find-your-purpose.jpg
 ---
 
 You're doing fine. That's what makes it strange.

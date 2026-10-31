@@ -3,6 +3,7 @@ title: "Why a Panic Attack Feels Like Dying, and Why It Isn't"
 description: "Panic arrives fully formed. Your heart races, your chest tightens and your mind decides something is badly wrong. Here is what the research says is actually happening, and what helps."
 pubDate: 2026-10-31
 tags: ["panic", "anxiety", "mental health", "evidence", "breathing"]
+image: ../../assets/images/blog/why-panic-feels-like-dying.jpg
 ---
 
 It usually starts with something small.
