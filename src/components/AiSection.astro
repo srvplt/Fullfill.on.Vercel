@@ -1,15 +1,15 @@
 ---
 import '../styles/ai-section.css';
 import { Image } from 'astro:assets';
-import pierreFox from '../assets/images/pierre fox.jpg';
+import felixFox from '../assets/images/pierre fox.jpg';
 ---
 
-<section class="ai-section" id="happierre-ai">
+<section class="ai-section" id="fullfill-ai">
   <div class="landing-container ai-section__layout">
 
     <!-- Left: Text content -->
     <div class="ai-section__content ai-animate-left">
-      <h2 class="ai-section__title">ask pierre how to be happier</h2>
+      <h2 class="ai-section__title">ask felix how to be happier</h2>
       <p class="ai-section__desc">trained on psychology and the journeys of top performers — invaluable insights improve your life</p>
     </div>
 
@@ -17,7 +17,7 @@ import pierreFox from '../assets/images/pierre fox.jpg';
 
     <!-- Right: Book image -->
     <div class="ai-section__image ai-animate-right">
-      <Image src={pierreFox} alt="Pierre the fox, your Happierre mind coach" class="ai-section__book-img" />
+      <Image src={felixFox} alt="Felix the fox, your Fullfill mind coach" class="ai-section__book-img" />
     </div>
 
   </div>
@@ -25,7 +25,7 @@ import pierreFox from '../assets/images/pierre fox.jpg';
 
 
 <script>
-  const section = document.querySelector('#happierre-ai');
+  const section = document.querySelector('#fullfill-ai');
   const layout = document.querySelector('.ai-section__layout');
 
   if (section && layout) {

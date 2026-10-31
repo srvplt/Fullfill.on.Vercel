@@ -67,7 +67,7 @@
   display: none;
 }
 
-/* Pierre artwork: preserve the source aspect ratio and fit within its column. */
+/* Felix artwork: preserve the source aspect ratio and fit within its column. */
 .ai-section__image {
   display: flex;
   flex: 0 1 46%;
@@ -201,7 +201,7 @@
     overflow: visible;
   }
 
-  /* Use the full phone width for Pierre, without cropping either edge. */
+  /* Use the full phone width for Felix, without cropping either edge. */
   .ai-section__book-img {
     display: block;
     width: 100vw;
@@ -240,7 +240,7 @@
 }
 
 
-/* Mobile: enlarge Pierre artwork and place Chat Now directly beneath it. */
+/* Mobile: enlarge Felix artwork and place Chat Now directly beneath it. */
 @media (max-width: 767px) {
   .ai-section__image {
     order: 2 !important;

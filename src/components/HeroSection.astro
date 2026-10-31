@@ -1,7 +1,7 @@
 ---
 import '../styles/hero.css';
 import { Image } from 'astro:assets';
-import logoNameOnly from '../assets/images/2026.10.14 happierre-wordmark-white.png';
+import logoNameOnly from '../assets/images/FinalLogoNameOnly.png';
 import finalImg from '../assets/images/final.png';
 ---
 
@@ -12,7 +12,7 @@ import finalImg from '../assets/images/final.png';
         <source src="/images/final.mov" type='video/quicktime; codecs="ap4h"'>
         <source src="/images/final.webm" type="video/webm">
       </video>
-      <Image id="fallback-img-comp" src={finalImg} alt="Happierre App" class="hero__phone-video" width={390} height={844} loading="eager" style="display: none;" />
+      <Image id="fallback-img-comp" src={finalImg} alt="Fullfill App" class="hero__phone-video" width={390} height={844} loading="eager" style="display: none;" />
       <script is:inline>
         (function() {
           const video = document.getElementById('hp-video-comp');
@@ -39,7 +39,7 @@ import finalImg from '../assets/images/final.png';
       </script>
     </div>
     <div class="hero__content">
-      <Image src={logoNameOnly} alt="Happierre" class="hero__logo" width={508} height={122} />
+      <Image src={logoNameOnly} alt="Fullfill" class="hero__logo" width={508} height={122} />
       <h1 class="hero__headline">your personal trainer for a happier mind</h1>
       <a href="https://www.fullfill.me/try" class="btn-primary">stop scrolling. start growing.</a>
     </div>

@@ -103,7 +103,7 @@ Flatness that covers everything, including things you used to enjoy, and that's 
 
 ---
 
-## Where Happierre fits
+## Where Fullfill fits
 
 [Purposeful Living](https://fullfill.me/try) is twenty-one short daily sessions built on this literature — Damon, Frankl, self-determination theory, and yes, the real ikigai rather than the blogger's version. It's built around actions small enough to actually take, because that's what the evidence supports.
 

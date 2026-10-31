@@ -3,7 +3,7 @@ import '../styles/launch-special.css';
 ---
 
 <section class="ls-section" id="sec-launch-special" aria-labelledby="ls-heading">
-  <h2 class="ls-visually-hidden" id="ls-heading">Happierre in action</h2>
+  <h2 class="ls-visually-hidden" id="ls-heading">Fullfill in action</h2>
   <div class="ls-video-frame" id="ls-video-frame"></div>
 </section>
 
@@ -14,7 +14,7 @@ import '../styles/launch-special.css';
     const renderVideo = () => {
       const isMobile = mobileQuery.matches;
       const videoId = isMobile ? 'InRmhsLv2NQ' : 'HCBZhlPYVIM';
-      const title = isMobile ? 'Happierre mobile app video' : 'Happierre desktop app video';
+      const title = isMobile ? 'Fullfill mobile app video' : 'Fullfill desktop app video';
       const current = frame.querySelector('iframe');
       if (current?.dataset.videoId === videoId) return;
 

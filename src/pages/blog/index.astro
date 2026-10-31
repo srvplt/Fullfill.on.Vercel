@@ -11,19 +11,19 @@ const posts = await getCollection('blog');
 const sortedPosts = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Layout title="Ask Pierre | Happierre" description="Ask Pierre for practical insights, tips, and tools to build mental fitness, reduce stress, and live a happier life.">
+<Layout title="ask Felix | Fullfill" description="ask Felix for practical insights, tips, and tools to build mental fitness, reduce stress, and live a happier life.">
   <div class="blog-page">
     <section class="blog-hero">
       <Image
         src={heroBg}
-        alt="Ask Pierre hero background"
+        alt="ask Felix hero background"
         loading="eager"
         fetchpriority="high"
         class="blog-hero__bg"
       />
       <div class="blog-hero__overlay"></div>
       <div class="blog-hero__content">
-        <h1 class="blog-hero__title">ask pierre</h1>
+        <h1 class="blog-hero__title">ask Felix</h1>
         <p class="blog-hero__subtitle">
           practical insights and small steps to help you build mental fitness and live a happier life.
         </p>

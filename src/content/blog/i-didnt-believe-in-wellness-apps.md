@@ -2,7 +2,7 @@
 title: "I Didn't Believe in Wellness Apps, Until My Brain Broke"
 description: "On paper, everything was fine. Then something small happened and it spiraled into something much bigger."
 pubDate: 2026-06-10
-tags: ["wellness", "mental health", "Happierre", "anxiety", "productivity"]
+tags: ["wellness", "mental health", "Fullfill", "anxiety", "productivity"]
 image: ../../assets/images/frinedlyanonymous2.jpg
 ---
 
@@ -116,7 +116,7 @@ Not 10-minute meditations. Not long routines.
 
 Just fast, practical ways to shift your state when you need it most.
 
-That's how [Happierre](https://fullfill.me) started.
+That's how [Fullfill](https://fullfill.me) started.
 
 ---
 
@@ -148,4 +148,4 @@ And more importantly — you're not stuck.
 
 If this resonates, I'd love to hear your experience.
 
-If you'd like to experience Happierre in action, visit [Happierre website](https://fullfill.me) or [download the app](https://fullfill.me/try).
+If you'd like to experience Fullfill in action, visit [Fullfill website](https://fullfill.me) or [download the app](https://fullfill.me/try).

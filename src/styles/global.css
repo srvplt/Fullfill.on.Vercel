@@ -1,5 +1,5 @@
 :root {
-  /* Official Happierre gradient stops */
+  /* Official Fullfill gradient stops */
   --stop-light-a: #BFA8F3;
   --stop-light-b: #BDD6FF;
   --stop-middle-a: #8A4BE1;
@@ -976,7 +976,7 @@ h6 {
     text-align: right !important;
   }
 
-  /* Happierre Is Fun: consistent breathing room between copy, phone and CTA. */
+  /* Fullfill Is Fun: consistent breathing room between copy, phone and CTA. */
   .hf-container {
     padding-top: 24px !important;
     gap: 24px !important;
@@ -1221,7 +1221,7 @@ h6 {
   }
 }
 
-/* One App for Everything comparison: fixed feature + Happierre columns,
+/* One App for Everything comparison: fixed feature + Fullfill columns,
    with a compact scrollable competitor rail on phones. CSS circles avoid
    iOS font-glyph sizing differences between filled and outline dots. */
 .ls-section {
