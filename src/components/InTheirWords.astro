@@ -1,0 +1,20 @@
+---
+const reviews = [
+  { quote: 'Intuitive and genuinely easy to integrate into daily life. Realistic about the time people can truly dedicate to themselves.', name: 'Despina L.' },
+  { quote: 'Quite a different take from the regular breathing meditation apps. I like that it is more complete with the 4C library.', name: 'Oliver N.' },
+  { quote: 'Clutter free and helps me stay focussed and calm, after chaotic days.', name: 'Ullaas M.' },
+];
+---
+<section class="iw-section" id="reviews">
+  <div class="bx-wrap">
+    <h2 class="bx-title iw-heading">in their <span class="accent">words</span></h2>
+    <div class="iw-grid">
+      {reviews.map((r) => (
+        <figure class="iw-card">
+          <blockquote>{r.quote}</blockquote>
+          <figcaption>{r.name}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </div>
+</section>
