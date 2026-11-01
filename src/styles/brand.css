@@ -61,3 +61,61 @@ h1, h2, h3, h4 { font-family: var(--font-urbanist); }
 .try-main { background:var(--gradient-dark) !important; }
 .try-main h1 { font-family:var(--font-urbanist); font-size:clamp(32px,4vw,44px); font-weight:700; line-height:1.1; }
 @media(max-width:767px) { .pa-section,.fa-section { padding:80px 0; } .iw-section { padding:72px 0; } .pa-media img { height:280px; } }
+
+
+/* Follow-up landing-page refinements. */
+.hero__logo { width: 190px !important; }
+@media (max-width: 767px) { .hero__logo { width: 158px !important; } }
+@media (max-width: 575px) { .hero__logo { width: 150px !important; } }
+.cortex-card__label, .cortex-card__desc { color: #fff !important; -webkit-text-fill-color: #fff !important; }
+
+/* Restore gradient titles without the decorative accent typeface. */
+.hf-heading .hf-grad, .ll-heading .ll-grad {
+  background: var(--gradient-text-on-dark) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+.hf-heading .accent, .ll-heading .accent { font-family: inherit !important; font-style: normal !important; }
+.start-today-title { color: var(--brand-cta) !important; -webkit-text-fill-color: var(--brand-cta) !important; font-family: inherit !important; font-style: normal !important; }
+
+/* Give these three sections the same sticky, viewport-height treatment as the other landing panels. */
+.pa-section, .fa-section, .iw-section {
+  height: calc(100svh - var(--site-header-height)) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  box-sizing: border-box !important;
+}
+.pa-section { display: flex; align-items: center; padding: 36px 0 !important; }
+.fa-section { display: flex; align-items: center; padding: 36px 0 !important; overflow: hidden; }
+.iw-section { display: flex; align-items: center; padding: 36px 0 !important; overflow: hidden; }
+.pa-grid { width: 100%; }
+.fa-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 112px; text-align: center; }
+.fa-card__icon { font-size: 30px; line-height: 1; }
+.fa-card p { display: none !important; }
+@media (max-width: 767px) {
+  .pa-section, .fa-section, .iw-section { height: calc(100lvh - var(--site-header-height)) !important; min-height: 0 !important; }
+  .pa-section { padding: 24px 0 !important; }
+  .pa-grid { gap: 20px; }
+  .pa-media img { height: 30svh !important; }
+  .pa-copy .bx-text { margin-top: 12px !important; }
+  .fa-section { padding: 20px 0 !important; }
+  .fa-head { margin-bottom: 18px !important; gap: 12px !important; }
+  .fa-head .btn-primary { margin: 0 !important; }
+  .fa-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+  .fa-card { min-height: 76px !important; padding: 10px !important; }
+  .fa-card h3 { font-size: 15px !important; }
+  .fa-card__icon { font-size: 23px; }
+  .iw-section { padding: 22px 0 !important; }
+  .iw-grid { gap: 10px !important; margin-top: 18px !important; }
+  .iw-card { padding: 14px !important; }
+  .iw-card blockquote { font-size: 13px !important; line-height: 1.4 !important; }
+}
+@media (max-width: 575px) {
+  .fa-card h3 { font-size: 13px !important; }
+  .fa-card { min-height: 68px !important; }
+}
+
+/* On mobile, give Felix's illustration more space above and position it lower. */
+@media (max-width: 767px) { .ai-section__image { margin-top: 26px !important; } }
