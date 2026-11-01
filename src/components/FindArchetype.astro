@@ -1,31 +1,30 @@
 ---
 const archetypes = [
-  { name: 'The Driven but Drained', line: 'Performing well, running on low fuel.' },
-  { name: 'The Wired and Tired', line: 'The body wants to stop. The mind keeps looping.' },
-  { name: 'The Midnight Thinker', line: 'Thoughts get louder at night.' },
-  { name: 'The Lost in the Fog', line: 'Not falling apart, not clear either.' },
-  { name: 'The Heavy Hearted', line: 'Carrying a weight nobody else can see.' },
-  { name: 'The Autopilot Aviator', line: 'Getting through the days, not steering them.' },
-  { name: 'The Silently Slipping', line: 'Motivation fading slowly and quietly.' },
-  { name: 'The Disconnected Soul', line: 'There, but not making contact.' },
-  { name: 'The Out of Sync Self', line: 'Sleep, movement and energy out of line.' },
-  { name: 'The Masked Smile', line: 'Composed outside, more going on inside.' },
+  { name: 'The Driven but Drained', icon: '⚡' },
+  { name: 'The Wired and Tired', icon: '🌙' },
+  { name: 'The Midnight Thinker', icon: '💭' },
+  { name: 'The Lost in the Fog', icon: '🌫️' },
+  { name: 'The Heavy Hearted', icon: '💙' },
+  { name: 'The Autopilot Aviator', icon: '🧭' },
+  { name: 'The Silently Slipping', icon: '🍂' },
+  { name: 'The Disconnected Soul', icon: '🫧' },
+  { name: 'The Out of Sync Self', icon: '🎵' },
+  { name: 'The Masked Smile', icon: '🎭' },
 ];
 ---
 <section class="fa-section" id="archetypes">
   <div class="bx-wrap">
     <div class="fa-head">
       <div>
-        <h2 class="bx-title fa-heading">find your <span class="accent">archetype</span></h2>
-        <p class="bx-text">Ten ways a mind can feel stuck. A short quiz when you sign up shows which one is yours, and Fullfill builds your first pathway around it.</p>
+        <h2 class="bx-title fa-heading">personalized for you</h2>
       </div>
       <a href="/try" class="btn-primary">take the quiz in the app</a>
     </div>
     <div class="fa-grid">
       {archetypes.map((a) => (
         <div class="fa-card">
+          <span class="fa-card__icon" aria-hidden="true">{a.icon}</span>
           <h3>{a.name}</h3>
-          <p>{a.line}</p>
         </div>
       ))}
     </div>
