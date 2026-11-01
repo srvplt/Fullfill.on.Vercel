@@ -1,0 +1,34 @@
+---
+const archetypes = [
+  { name: 'The Driven but Drained', icon: '⚡' },
+  { name: 'The Wired and Tired', icon: '🌙' },
+  { name: 'The Midnight Thinker', icon: '💭' },
+  { name: 'The Lost in the Fog', icon: '🌫️' },
+  { name: 'The Heavy Hearted', icon: '💙' },
+  { name: 'The Autopilot Aviator', icon: '🧭' },
+  { name: 'The Silently Slipping', icon: '🍂' },
+  { name: 'The Disconnected Soul', icon: '🫧' },
+  { name: 'The Out of Sync Self', icon: '🎵' },
+  { name: 'The Masked Smile', icon: '🎭' },
+];
+---
+<section class="fa-section" id="archetypes">
+  <div class="bx-wrap">
+    <div class="fa-head">
+      <div>
+        <h2 class="bx-title fa-heading">personalized <span class="fa-playfair">for you</span></h2>
+        <p class="fa-intro">10 archetypes. Which one are you?</p>
+      </div>
+      
+    </div>
+    <div class="fa-grid">
+      {archetypes.map((a) => (
+        <a href="https://fullfill.me/try" class="fa-card" aria-label={`Discover ${a.name} in the Fullfill app`}>
+          <span class="fa-card__icon" aria-hidden="true">{a.icon}</span>
+          <h3>{a.name}</h3>
+        </a>
+      ))}
+    </div>
+    <div class="fa-quiz-cta"><a href="/try" class="btn-primary">take the quiz</a></div>
+  </div>
+</section>

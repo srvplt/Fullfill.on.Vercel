@@ -3,9 +3,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout 
-  title="Fullfill – Find Your Fire"
+  title="Download Fullfill: stop scrolling, start living"
   description="Download the Fullfill app and start your personal growth journey."
-  ogTitle="Fullfill: Stop Scrolling. Start Growing"
+  ogTitle="Fullfill: stop scrolling, start living"
   ogImage="/images/og-image.jpg"
   canonicalPath="/try/"
 >
@@ -27,7 +27,8 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="try-text">
 
-      <h1>Fullfill: find your fire</h1>
+      <h1>stop scrolling, <span class="accent">start living</span></h1>
+      <p class="try-sub">Download Fullfill, your personal trainer for a happier mind.</p>
 
       <div class="btn-row">
 
@@ -76,7 +77,7 @@ import Layout from '../layouts/Layout.astro';
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #a9c9ff, #d2cdff);
+  background: var(--gradient-dark);
   padding: 40px 20px;
   color: white;
 }
@@ -98,11 +99,22 @@ import Layout from '../layouts/Layout.astro';
 
 
 h1 {
-  font-size: 34px;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-family: var(--font-urbanist);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 12px;
+  color: #ffffff;
 }
 
+
+.try-sub {
+  font-family: var(--font-poppins);
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 0 0 28px;
+  color: #ffffff;
+}
 
 .btn-row {
   display: flex;
@@ -114,17 +126,23 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 140px;
-  padding: 12px 14px;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 12px;
-  color: white;
+  min-width: 150px;
+  min-height: 52px;
+  padding: 0 28px;
+  background: #5E61D6;
+  border: 0;
+  border-radius: 999px;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 500;
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
+
+.btn:hover { background: #4A4DC2; }
 
 .qr-wrap {
   flex: 1;
@@ -160,7 +178,7 @@ h1 {
 
 
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
 }

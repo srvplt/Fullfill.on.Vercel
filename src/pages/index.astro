@@ -10,20 +10,25 @@ import FunSection from '../components/FunSection.astro';
 import AiSection from '../components/AiSection.astro';
 import Podcasts from '../components/Podcasts.astro';
 import GetHooked from '../components/GetHooked.astro';
-import NeverAlone from '../components/NeverAlone.astro';
+import PanicArrives from '../components/PanicArrives.astro';
+import FindArchetype from '../components/FindArchetype.astro';
+import InTheirWords from '../components/InTheirWords.astro';
 import LaunchSpecial from '../components/LaunchSpecial.astro';
 import PeaceOfMind from '../components/PeaceOfMind.astro';
 ---
 
 <Layout
-  title="Fullfill – Your Personal Trainer for a Happier Mind"
-  ogTitle="Fullfill: Stop Scrolling. Start Growing"
+  title="Fullfill: Your Personal Trainer for a Happier Mind"
+  ogTitle="Fullfill: stop scrolling, start living"
   ogImage="/images/og-image.jpg"
 >
   <HeroSection />
   <ExerciseBanner />
   <BrainCortex />
   <HaveEverything />
+  <div class="fullpage-sticky-wrapper">
+    <FindArchetype />
+  </div>
   <HappinessCompounds />
   <div class="fullpage-sticky-wrapper">
     <PremiumContent />
@@ -40,9 +45,14 @@ import PeaceOfMind from '../components/PeaceOfMind.astro';
   <div class="fullpage-sticky-wrapper">
     <GetHooked />
   </div>
-  <NeverAlone />
+  <div class="fullpage-sticky-wrapper">
+    <PanicArrives />
+  </div>
   <div class="fullpage-sticky-wrapper">
     <LaunchSpecial />
+  </div>
+  <div class="fullpage-sticky-wrapper">
+    <InTheirWords />
   </div>
   <PeaceOfMind />
 </Layout>

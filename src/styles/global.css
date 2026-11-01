@@ -1,24 +1,27 @@
 :root {
   /* Official Fullfill gradient stops */
-  --stop-light-a: #BFA8F3;
+  --stop-light-a: #BC9CF6;
+  --stop-light-m: #BAB9F7;
+  --stop-middle-m: #7971D4;
   --stop-light-b: #BDD6FF;
   --stop-middle-a: #8A4BE1;
   --stop-middle-b: #698CCF;
-  --stop-dark-a: #5118BA;
-  --stop-dark-b: #113890;
+  --stop-dark-a: #5A16A0;
+  --stop-dark-m: #2E2492;
+  --stop-dark-b: #16398C;
 
   /* Gradient text: light on dark backgrounds, middle on light backgrounds */
   --gradient-text-on-dark: linear-gradient(90deg, var(--stop-light-a) 0%, var(--stop-light-b) 100%);
   --gradient-text-on-light: linear-gradient(90deg, var(--stop-middle-a) 0%, var(--stop-middle-b) 100%);
 
-  --color-brand: #5e61d6;
-  --color-brand-hover: #4a4dc2;
+  --color-brand: #5E61D6;
+  --color-brand-hover: #4A4DC2;
   --color-bg-light: #ffffff;
   --color-bg-tint: var(--stop-light-b);
-  --color-text-dark: #113890;
-  --color-text-body: #243b68;
-  --color-text-muted: #52678f;
-  --color-text-light: #999999;
+  --color-text-dark: #0E2F79;
+  --color-text-body: #0E2F79;
+  --color-text-muted: #0E2F79;
+  --color-text-light: #E0E3E7;
   --container-max-width: 1140px;
   --container-padding-desktop: 42px;
   --container-padding-tablet: 33px;
@@ -26,10 +29,10 @@
   --site-header-height: 80px;
 
   /* Brand gradients use only the official stops; the subtle glow is removed */
-  --gradient-light: radial-gradient(circle at 0% 0%, #CAD0FB, transparent 75%), linear-gradient(225deg, var(--stop-light-b), var(--stop-light-a));
-  --gradient-middle: radial-gradient(circle at 0% 0%, #6C88DD, transparent 75%), linear-gradient(225deg, var(--stop-middle-b), var(--stop-middle-a));
-  --gradient-dark: radial-gradient(circle at 0% 0%, #2F45BA, transparent 75%), linear-gradient(225deg, var(--stop-dark-b), var(--stop-dark-a));
-  --gradient-super-dark: radial-gradient(circle at 0% 0%, #162F6F, transparent 75%), linear-gradient(225deg, #0B2462, #360568);
+  --gradient-light: radial-gradient(circle at 0% 0%, #CAD0FB, rgba(202, 208, 251, 0) 75%), linear-gradient(225deg, #BDD6FF 0%, #BAB9F7 50%, #BC9CF6 100%);
+  --gradient-middle: radial-gradient(circle at 0% 0%, #6C88DD, rgba(108, 136, 221, 0) 75%), linear-gradient(225deg, #698CCF 0%, #7971D4 50%, #8A4BE1 100%);
+  --gradient-dark: radial-gradient(circle at 0% 0%, #2F45BA, rgba(47, 69, 186, 0) 75%), linear-gradient(225deg, #16398C 0%, #2E2492 50%, #5A16A0 100%);
+  --gradient-super-dark: radial-gradient(circle at 0% 0%, #1C3A8C, rgba(28, 58, 140, 0) 75%), linear-gradient(225deg, #0A2466 0%, #1B1460 50%, #360568 100%);
 
   /* Legacy semantic aliases retained for existing page styles */
   --color-brand-light: var(--stop-light-a);
@@ -38,22 +41,22 @@
   --color-gradient-start: var(--stop-middle-a);
   --color-gradient-end: var(--stop-middle-b);
   --color-dark-purple: var(--stop-dark-b);
-  --color-accent-coral: #e05555;
+  --color-accent-coral: #EE8B60;
   --color-lavender: var(--stop-light-a);
   --color-section-purple: var(--stop-middle-a);
 
   --color-white: #ffffff;
   --color-brand-mid: var(--stop-middle-b);
   --color-purple-deep: var(--stop-middle-a);
-  --gradient-hero: linear-gradient(to right, var(--stop-light-b), var(--stop-light-a));
-  --gradient-header: linear-gradient(var(--stop-middle-a), var(--stop-middle-b));
-  --gradient-dark-overlay: linear-gradient(160deg, rgba(17, 56, 144, 0.94) 0%, rgba(81, 24, 186, 0.90) 55%, rgba(17, 56, 144, 0.94) 100%);
+  --gradient-hero: var(--gradient-light);
+  --gradient-header: var(--gradient-middle);
+  --gradient-dark-overlay: var(--gradient-dark);
   --color-phone-black: #000000;
   --color-phone-border: #1a1a1a;
   --color-brand-light-end: var(--stop-light-b);
 
   /* Fonts */
-  --font-open-sans: 'Open Sans', sans-serif;
+  --font-open-sans: 'Poppins', sans-serif;
   --font-urbanist: 'Urbanist', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   /* mapped to Urbanist like original site */
@@ -113,7 +116,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: var(--font-open-sans);
+  font-family: var(--font-poppins);
   color: var(--color-text-dark);
   background: var(--color-bg-light);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
@@ -1551,7 +1554,7 @@ h6 {
 /* Site-wide title contrast: brand on white, white on colour, podcast gradient on very dark panels. */
 :root {
   --title-color-on-white: var(--color-brand);
-  --title-gradient-on-dark: linear-gradient(90deg, #ae68f7 0%, #6a77ff 55%, #a9c9ff 100%);
+  --title-gradient-on-dark: linear-gradient(90deg, #8A4BE1 0%, #4E5CD4 55%, #BDD6FF 100%);
 }
 
 /* Ordinary page titles on white content surfaces use the Happiness Compounds brand colour. */

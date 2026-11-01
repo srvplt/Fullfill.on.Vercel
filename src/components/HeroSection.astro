@@ -28,12 +28,8 @@ import finalImg from '../assets/images/final.png';
               activeEl = video;
             }
             activeEl.style.display = 'block';
-            if (activeEl === video) {
-              img.style.display = 'none';
-            } else {
-              video.style.display = 'none';
-              video.pause();
-            }
+            if (activeEl === video) img.style.display = 'none';
+            else { video.style.display = 'none'; video.pause(); }
           }
         })();
       </script>
