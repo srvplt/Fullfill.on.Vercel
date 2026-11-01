@@ -35,7 +35,7 @@ h1, h2, h3, h4 { font-family: var(--font-urbanist); }
 .brain-cortex__title .accent, .happiness__title .accent, .ai-section__title .accent, .gh-heading .accent, .iw-heading .accent {
   -webkit-text-fill-color:var(--brand-violet) !important; color:var(--brand-violet) !important;
 }
-.ai-section__desc, .gh-sub, .happiness p, .brain-cortex p { color:var(--brand-navy); }
+.ai-section__desc, .gh-sub, .happiness p, .brain-cortex p { color:var(--color-brand); }
 .bx-wrap { max-width:1140px; margin:0 auto; padding:0 24px; position:relative; z-index:2; }
 .bx-title { font-family:var(--font-urbanist); font-weight:700; font-size:clamp(34px,5vw,56px); line-height:1.08; letter-spacing:-.01em; margin:0; }
 .bx-text { font-family:var(--font-poppins); font-size:clamp(16px,1.6vw,19px); line-height:1.65; margin:24px 0 0; }
@@ -91,6 +91,9 @@ h1, h2, h3, h4 { font-family: var(--font-urbanist); }
 .fa-section { display: flex; align-items: center; padding: 36px 0 !important; overflow: hidden; }
 .iw-section { display: flex; align-items: center; padding: 36px 0 !important; overflow: hidden; }
 .pa-grid { width: 100%; }
+.pa-copy { flex: 1 1 100%; max-width: 820px; margin: 0 auto; text-align: center; }
+.pa-copy .bx-text { color: #fff; -webkit-text-fill-color: #fff; }
+.fa-intro { margin: 16px 0 0; font-family: var(--font-poppins); font-size: 18px; line-height: 1.5; color: #fff; text-align: center; }
 .fa-card { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; min-height: 112px; text-align: center; }
 .fa-card__icon { font-size: 30px; line-height: 1; }
 .fa-card p { display: none !important; }
@@ -123,8 +126,8 @@ h1, h2, h3, h4 { font-family: var(--font-urbanist); }
 
 /* Latest review refinements */
 .cortex-card__label, .cortex-card__desc {
-  color: var(--brand-navy) !important;
-  -webkit-text-fill-color: var(--brand-navy) !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
 }
 
 /* Return Get Hooked to the original gradient heading treatment. */
@@ -144,7 +147,13 @@ h1, h2, h3, h4 { font-family: var(--font-urbanist); }
   filter: grayscale(1) brightness(0) invert(1) !important;
   opacity: .58 !important;
 }
-.pa-heading { text-align: center !important; }
+.pa-heading { text-align: center !important; font-size: clamp(34px,5vw,56px) !important; }
+.have-everything__title .accent { color: #D8C5FF !important; -webkit-text-fill-color: #D8C5FF !important; }
+.ai-section__title { font-family: var(--font-urbanist) !important; color: var(--color-brand-mid) !important; -webkit-text-fill-color: var(--color-brand-mid) !important; background: none !important; }
+.ai-section__desc { font-family: var(--font-urbanist) !important; color: var(--color-brand) !important; -webkit-text-fill-color: var(--color-brand) !important; }
+.gh-sub { color: var(--color-brand) !important; -webkit-text-fill-color: var(--color-brand) !important; }
+.fa-heading { font-size: clamp(34px,5vw,56px) !important; }
+@media(max-width:767px) { .fa-intro { font-size: 15px; margin-top: 10px; } }
 
 /* Restore Peace of Mind's original two-tone heading colours. */
 .pom-heading {
