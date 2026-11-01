@@ -16,18 +16,19 @@ const archetypes = [
   <div class="bx-wrap">
     <div class="fa-head">
       <div>
-        <h2 class="bx-title fa-heading">personalized for you</h2>
+        <h2 class="bx-title fa-heading">personalized <span class="fa-playfair">for you</span></h2>
         <p class="fa-intro">10 archetypes. Which one are you?</p>
       </div>
-      <a href="/try" class="btn-primary">take the quiz in the app</a>
+      
     </div>
     <div class="fa-grid">
       {archetypes.map((a) => (
-        <div class="fa-card">
+        <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer" class="fa-card" aria-label={`Discover ${a.name} in the Fullfill app`}>
           <span class="fa-card__icon" aria-hidden="true">{a.icon}</span>
           <h3>{a.name}</h3>
-        </div>
+        </a>
       ))}
     </div>
+    <div class="fa-quiz-cta"><a href="/try" class="btn-primary">take the quiz</a></div>
   </div>
 </section>
