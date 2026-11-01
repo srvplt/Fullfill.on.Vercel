@@ -119,3 +119,41 @@ h1, h2, h3, h4 { font-family: var(--font-urbanist); }
 
 /* On mobile, give Felix's illustration more space above and position it lower. */
 @media (max-width: 767px) { .ai-section__image { margin-top: 26px !important; } }
+
+
+/* Latest review refinements */
+.cortex-card__label, .cortex-card__desc {
+  color: var(--brand-navy) !important;
+  -webkit-text-fill-color: var(--brand-navy) !important;
+}
+
+/* Return Get Hooked to the original gradient heading treatment. */
+.gh-heading {
+  background: var(--gradient-text-on-dark) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Align section headings consistently and keep archetype icons monochrome. */
+.fa-head { justify-content: center !important; }
+.fa-head > div { flex: 1 1 100% !important; text-align: center !important; }
+.fa-heading { text-align: center !important; }
+.fa-card__icon {
+  filter: grayscale(1) brightness(0) invert(1) !important;
+  opacity: .58 !important;
+}
+.pa-heading { text-align: center !important; }
+
+/* Restore Peace of Mind's original two-tone heading colours. */
+.pom-heading {
+  background: none !important;
+  -webkit-text-fill-color: var(--color-text-dark) !important;
+  color: var(--color-text-dark) !important;
+  text-shadow: 0 0 40px rgba(95, 66, 197, 0.3) !important;
+}
+.pom-heading span {
+  -webkit-text-fill-color: var(--color-purple-deep) !important;
+  color: var(--color-purple-deep) !important;
+}
