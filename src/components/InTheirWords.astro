@@ -1,20 +1,43 @@
 ---
 const reviews = [
-  { quote: 'Intuitive and genuinely easy to integrate into daily life. Realistic about the time people can truly dedicate to themselves.', name: 'Despina L.' },
-  { quote: 'Quite a different take from the regular breathing meditation apps. I like that it is more complete with the 4C library.', name: 'Oliver N.' },
-  { quote: 'Clutter free and helps me stay focussed and calm, after chaotic days.', name: 'Ullaas M.' },
+  { quote: 'Intuitive and genuinely easy to integrate into daily life. Realistic about the time people can truly dedicate to themselves.', name: 'Despina L.', avatar: 'DL' },
+  { quote: 'Quite a different take from the regular breathing meditation apps. I like that it is more complete with the 4C library.', name: 'Oliver N.', avatar: 'ON' },
+  { quote: 'Clutter free and helps me stay focussed and calm, after chaotic days.', name: 'Ullaas M.', avatar: 'UM' },
+  { quote: '', name: '', avatar: '04' }, { quote: '', name: '', avatar: '05' },
+  { quote: '', name: '', avatar: '06' }, { quote: '', name: '', avatar: '07' },
+  { quote: '', name: '', avatar: '08' }, { quote: '', name: '', avatar: '09' },
+  { quote: '', name: '', avatar: '10' },
 ];
 ---
 <section class="iw-section" id="reviews">
-  <div class="bx-wrap">
+  <div class="bx-wrap iw-wrap">
     <h2 class="bx-title iw-heading">in their <span class="accent">words</span></h2>
-    <div class="iw-grid">
-      {reviews.map((r) => (
-        <figure class="iw-card">
-          <blockquote>{r.quote}</blockquote>
-          <figcaption>{r.name}</figcaption>
-        </figure>
-      ))}
+    <div class="iw-carousel" aria-label="Customer reviews">
+      <div class="iw-grid">
+        {reviews.map((r, i) => (
+          <figure class="iw-card" aria-label={r.name || `Review placeholder ${i + 1}`}>
+            <div class="iw-person">
+              <span class="iw-avatar" aria-hidden="true">{r.avatar}</span>
+              {r.name && <figcaption>{r.name}</figcaption>}
+            </div>
+            <blockquote>{r.quote || 'Your review text goes here.'}</blockquote>
+          </figure>
+        ))}
+      </div>
+    </div>
+    <div class="iw-controls" aria-label="Review carousel controls">
+      <button class="iw-arrow" type="button" data-direction="-1" aria-label="Scroll reviews left">‹</button>
+      <span class="iw-hint">scroll to read more</span>
+      <button class="iw-arrow" type="button" data-direction="1" aria-label="Scroll reviews right">›</button>
     </div>
   </div>
+  <script>
+    const carousel = document.querySelector('#reviews .iw-carousel');
+    document.querySelectorAll('#reviews .iw-arrow').forEach((button) => {
+      button.addEventListener('click', () => {
+        const direction = Number(button.getAttribute('data-direction') || 1);
+        carousel?.scrollBy({ left: direction * (carousel.clientWidth * 0.8), behavior: 'smooth' });
+      });
+    });
+  </script>
 </section>
